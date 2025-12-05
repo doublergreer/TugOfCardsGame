@@ -2,6 +2,6 @@ package tugofcards.cards;
 
 public interface Card {
     int getPointValue();
-    String getSuit();
-    String getRank();
+    Suit getSuit();
+    Rank getRank();
 }
