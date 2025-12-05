@@ -2,8 +2,13 @@ package tugofcards.cards;
 
 // Jack, Queen, King, and maybe Joker
 public class FaceCard implements Card {
-    private Suit suit;
-    private Rank rank;
+    private final Suit suit;
+    private final Rank rank;
+
+    public FaceCard(Suit suit, Rank rank) {
+        this.suit = suit;
+        this.rank = rank;
+    }
 
     @Override
     public int getPointValue() {
