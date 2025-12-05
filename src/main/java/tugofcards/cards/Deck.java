@@ -31,4 +31,8 @@ public class Deck {
     public Card draw() {
         return cards.removeLast();
     }
+
+    public int getNumberOfCards() {
+        return cards.size();
+    }
 }
