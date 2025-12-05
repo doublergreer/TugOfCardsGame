@@ -2,25 +2,26 @@ package tugofcards.cards;
 
 // cards ace->10
 public class NumeralCard implements Card {
-    private int pointValue;
-    private String suit;
+    private final Rank rank;
+    private final Suit suit;
 
-    @Override
-    public int getPointValue() {
-        return pointValue;
+    public NumeralCard(Suit suit, Rank rank) {
+        this.suit = suit;
+        this.rank = rank;
     }
 
     @Override
-    public String getSuit() {
+    public int getPointValue() {
+        return rank.getPointValue();
+    }
+
+    @Override
+    public Suit getSuit() {
         return suit;
     }
 
     @Override
-    public String getRank() {
-        if (pointValue == 1) {
-            return "Ace";
-        } else {
-            return Integer.toString(pointValue);
-        }
+    public Rank getRank() {
+        return rank;
     }
 }
