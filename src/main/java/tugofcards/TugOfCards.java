@@ -2,6 +2,7 @@ package tugofcards;
 
 import tugofcards.cards.CardFactory;
 import tugofcards.cards.Deck;
+import tugofcards.cards.FaceCard;
 
 public class TugOfCards {
     private final Deck cardDeck;
