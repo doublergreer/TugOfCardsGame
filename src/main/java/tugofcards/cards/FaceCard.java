@@ -24,4 +24,9 @@ public class FaceCard implements Card {
     public Rank getRank() {
         return rank;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s", rank, suit);
+    }
 }
