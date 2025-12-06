@@ -13,16 +13,16 @@ public class GameDriver {
         System.out.println("Welcome to the TugOfCards Game!");
         System.out.println("--------------------------------");
 
+        //Builder pattern
         TugOfCards game = new TugOfCardsBuilder()
                 .setStrategy(new StandardMatchupStrategy())
                 .build();
 
-
+        //Observer pattern
         game.addObserver(message -> System.out.println(message));
 
-
+        //Game loop
         while (!game.isGameOver()) {
-
             System.out.println(game.toString());
             
             System.out.println("Press enter to draw a card!");
