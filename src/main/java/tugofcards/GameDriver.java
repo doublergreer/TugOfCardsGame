@@ -1,7 +1,5 @@
 package tugofcards;
 
-import tugofcards.cards.CardFactory;
-
 import java.util.Scanner;
 
 public class GameDriver {
@@ -13,16 +11,20 @@ public class GameDriver {
 
         System.out.println("Hello, " + name + "!");
         System.out.println("Welcome to the TugOfCards Game!");
+        System.out.println("--------------------------------");
 
-        //add print to ask user what strategy they want to use
+        TugOfCards game = new TugOfCardsBuilder()
+                .setStrategy(new StandardMatchupStrategy())
+                .build();
 
-        CardFactory cardFactory = new CardFactory();
-        MatchupStrategy strategy = new StandardMatchupStrategy();
 
-        TugOfCards game = new TugOfCards(cardFactory, strategy);
+        game.addObserver(message -> System.out.println(message));
+
 
         while (!game.isGameOver()) {
-            game.toString();
+
+            System.out.println(game.toString());
+            
             System.out.println("Press enter to draw a card!");
             scanner.nextLine();
 
@@ -32,6 +34,3 @@ public class GameDriver {
         scanner.close();
     }
 }
-
-
-
