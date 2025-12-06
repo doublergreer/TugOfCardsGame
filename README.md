@@ -17,5 +17,5 @@ TugOfCards is a command-line game simulating a tug-of-war. Each round, you and y
 - Queen: 12 points
 - King: 13 points
 
-### Face Card Special Rules:
-Face cards (Jack, Queen, and King) offer a distinct advantage over the numbered ranks in that playing them against non-face cards will result in the rope being moved two positions instead of one in the winner's direction.  
+### Special King Rule:
+King cards offer a distinct advantage over the ordinary ranks in that playing them against non-face cards will result in the rope being moved two positions instead of one in the winner's direction.  
