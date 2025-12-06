@@ -1,5 +1,5 @@
 # TugOfCards
-TugOfCards is a command-line game simulating a tug-of-war. Each round, you and your opponent each draw a card, and whichever player draws a card of a higher point value pulls the rope one point towards their goal.
+TugOfCards is a command-line game simulating a tug-of-war. Each round, you and your opponent each draw a card, and whichever player draws a card of a higher point value pulls the rope one point towards their goal. The rope starts at 0, and whichever player can pull the rope 10 spaces from the starting point first wins!
 
 ### Point Values
 #### Card point values work exactly as you might expect:
